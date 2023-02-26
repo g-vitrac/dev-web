@@ -1,0 +1,5 @@
+<mat-nav-list>
+  <a mat-list-item [routerLink]="['/recipe-detail', recipe.id]" routerLinkActive="true" *ngFor="let recipe of recipes" >
+    <app-recipe-detail [recipe]="recipe"></app-recipe-detail>
+  </a>
+</mat-nav-list>

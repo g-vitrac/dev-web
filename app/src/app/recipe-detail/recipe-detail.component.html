@@ -1,0 +1,24 @@
+<mat-card *ngIf="recipe != null">
+    <div id="btn-container" *ngIf="id != null">
+      <button mat-icon-button type="button" (click)="editRecipe(recipe.id)">
+        <img src="/assets/pencil.png"/>
+      </button>
+      <button mat-icon-button type="button" (click)="toggleFav(1)">
+        <img [src]="['/assets/'+heart+'.png']"/>
+      </button>
+      <button mat-icon-button type="button" (click)="deleteRecipe(recipe.id)">
+        <img src="/assets/delete.png"/>
+      </button>
+    </div>
+  <mat-card-header>
+    <img mat-card-sm-image src="{{recipe.imgSrc}}">
+    <mat-card-title>
+      {{recipe.title}}
+    </mat-card-title>
+    <mat-card-subtitle>{{recipe.author}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content [innerHTML]="recipe.detail">
+  </mat-card-content>
+  <youtube-player *ngIf="recipe.id != null" [videoId]="videoId"></youtube-player>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</mat-card>

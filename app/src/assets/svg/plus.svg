@@ -1,0 +1,10 @@
+<svg viewBox="-100 -100 200 200" style="background-color:white" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <g id="plus">
+            <circle fill="black" cx="0" cy="0" r="95"/>
+            <line  stroke="white" stroke-width="30" x1="-60" y1="0" x2="60" y2="0" stroke-linecap="round"/>
+            <line  stroke="white" stroke-width="30" x1="0" y1="-60" x2="0" y2="60" stroke-linecap="round"/>
+          </g>
+        </defs>
+  <use href="#plus"></use>
+</svg>

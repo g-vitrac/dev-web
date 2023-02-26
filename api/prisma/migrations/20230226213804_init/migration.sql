@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "Recipe" ALTER COLUMN "title" SET DEFAULT '',
+ALTER COLUMN "detail" SET DEFAULT '',
+ALTER COLUMN "author" SET DEFAULT '',
+ALTER COLUMN "imgSrc" SET DEFAULT '';

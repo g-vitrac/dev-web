@@ -1,0 +1,23 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Auteur</mat-label>
+    <input matInput name="author" [(ngModel)]="author">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Titre</mat-label>
+    <input matInput name="title" [(ngModel)]="title">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Image url</mat-label>
+    <input matInput name="imgSrc" [(ngModel)]="imgSrc">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea matInput name="detail" [(ngModel)]="detail"></textarea>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Lien youtube</mat-label>
+    <input matInput name="youtubeLink" [(ngModel)]="youtubeLink">
+  </mat-form-field>
+  <button type="button" mat-raised-button (click)="save()">{{buttonTitle}}</button>
+</form>
